@@ -13,9 +13,11 @@ export function activate(context: vscode.ExtensionContext) {
       placeHolder: "",
       password: false
     }).then((value) => {
-      vscode.workspace.openTextDocument(value).then(doc => {
-        vscode.window.showTextDocument(doc);
-      });
+      if (value.trim().length) {
+        vscode.workspace.openTextDocument(value).then(doc => {
+          vscode.window.showTextDocument(doc);
+        });
+      }
     });
   });
 

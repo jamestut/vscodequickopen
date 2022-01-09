@@ -2,7 +2,7 @@
   "name": "quickopen",
   "displayName": "Quick Open",
   "description": "Quickly open files or folders",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "jamestut",
   "engines": {
     "vscode": "^1.34.0"
